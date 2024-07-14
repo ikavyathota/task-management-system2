@@ -1,0 +1,30 @@
+/* Notification.css */
+
+.notification {
+    width: 100%;
+  }
+  
+  .notification-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .notification-table th, .notification-table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .notification-table th {
+    background-color: #f8f9fa;
+  }
+  
+  .notification-table td {
+    background-color: #ffffff;
+  }
+  
+  .notification-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

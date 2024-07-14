@@ -1,0 +1,47 @@
+
+
+.delete-task {
+  width: 100%;
+}
+
+.delete-task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.delete-task-table th, .delete-task-table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+}
+
+.delete-task-table th {
+  background-color: #f8f9fa;
+}
+
+.delete-task-table td {
+  background-color: #ffffff;
+}
+
+.delete-task-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.delete-task-checkbox {
+  margin-right: 10px;
+}
+
+.delete-task-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-task-button:hover {
+  background-color: #0056b3;
+}

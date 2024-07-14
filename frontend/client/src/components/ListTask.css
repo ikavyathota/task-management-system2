@@ -1,0 +1,66 @@
+/* ListTasks.css */
+
+.list-tasks {
+  width: 100%;
+}
+
+.list-tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.list-tasks-table th, .list-tasks-table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+}
+
+.list-tasks-table th {
+  background-color: #f8f9fa;
+}
+
+.list-tasks-table td {
+  background-color: #ffffff;
+}
+
+.list-tasks-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* ListTasks.css adjustments for filter layout */
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two filters per row */
+    gap: 20px; /* Space between filters */
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-label {
+    font-weight: bold;
+    margin-right: 10px; /* Space between label and input */
+  }
+  
+  .filter-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Full width of the grid column */
+  }
+  
+  @media (max-width: 768px) {
+    .filters {
+      grid-template-columns: 1fr; /* Stack filters vertically on smaller screens */
+    }
+  }
+  
