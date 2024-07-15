@@ -63,15 +63,19 @@ Replace `your_jwt_secret` with a strong secret key for JWT.
 1. Navigate to the `frontend` directory:
     ```sh
     cd ../frontend
+    
+
     ```
 
 2. Install frontend dependencies:
     ```sh
+
     npm install
     ```
 
 3. Start the frontend development server:
     ```sh
+    cd client
     npm start
     ```
 
