@@ -57,7 +57,38 @@ Replace `your_jwt_secret` with a strong secret key for JWT.
     ```sh
     npm start
     ```
+ Set up the MySQL database:
+    - Create the database:
+      ```sql
+      CREATE DATABASE studentdb;
+      ```
 
+    - Create the `users` and `tasks` tables:
+      ```sql
+      CREATE TABLE studentdb.users (
+          id INT AUTO_INCREMENT,
+          email VARCHAR(80) NOT NULL,
+          password VARCHAR(260),
+          createdOn DATETIME DEFAULT CURRENT_TIMESTAMP,
+          updatedOn DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+          PRIMARY KEY (email),
+          UNIQUE (id)
+      );
+
+      CREATE TABLE studentdb.tasks (
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          title VARCHAR(100) NOT NULL,
+          description TEXT NOT NULL,
+          createdOn DATETIME DEFAULT CURRENT_TIMESTAMP,
+          createdBy VARCHAR(80) NOT NULL,
+          assignedTo VARCHAR(80),
+          dueDate DATE,
+          status VARCHAR(255) DEFAULT 'pending',
+          category VARCHAR(100),
+          FOREIGN KEY (createdBy) REFERENCES users(email),
+          FOREIGN KEY (assignedTo) REFERENCES users(email)
+      );
+      ```
 ### Frontend Setup
 
 1. Navigate to the `frontend` directory:
