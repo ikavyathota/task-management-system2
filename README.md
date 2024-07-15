@@ -183,5 +183,5 @@ The frontend application will be available at `http://localhost:3000` and the ba
 - **MySQL**: Used as the database for storing user and task data, chosen for its reliability and support for structured data.
 - **JWT**: Used for securing API endpoints and managing user authentication, chosen for its stateless nature and scalability.
 
-This document provides a comprehensive overview of the setup and functionality of the Task Management System. If you have any further questions or need additional information, feel free to ask.
+
 
